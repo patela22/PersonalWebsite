@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.footer-subscription {
+.footer-submission {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,17 +19,17 @@
   color: #fff;
 }
 
-.footer-subscription > p {
+.footer-submission > p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
 
-.footer-subscription-heading {
+.footer-submission-heading {
   margin-bottom: 24px;
   font-size: 24px;
 }
 
-.footer-subscription-text {
+.footer-submission-text {
   margin-bottom: 24px;
   font-size: 20px;
 }
@@ -99,6 +99,11 @@
   font-size: 24px;
 }
 
+.social-icon-link i:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease-in-out;
+}
+
 .social-media {
   max-width: 1000px;
   width: 100%;
@@ -115,7 +120,7 @@
 
 .social-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 240px;
 }
