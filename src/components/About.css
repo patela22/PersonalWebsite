@@ -1,0 +1,68 @@
+.profile-container {
+    flex: 0 0 auto;
+    margin-right: 40px; /* Changed from margin-right to margin-left */
+    border-radius: 20%; /* Added for circular image */
+    overflow: hidden; /* Ensures no overflow outside the circular shape */
+}
+
+.profile-image {
+    width: 400px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #333333; /* This is a placeholder for your actual background color */
+    flex-direction: row-reverse; /* Added to reverse the order */
+}
+
+.text-container {
+    flex: 1; /* Allow the text container to take up remaining space */
+    padding: 20px; /* Add padding inside the text container */
+    background-color: #E8E8E8; /* This is a placeholder for your actual background color */
+    border-radius: 15px; /* Add rounded corners to your text container */
+    text-align: center;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 800px) {
+    .about-container {
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center align items for smaller screens */
+        text-align: center; /* Center the text for smaller screens */
+    }
+
+    .profile-container {
+        margin-top: 20px; /* Add some space between the image and the text */
+        width: 80%; /* Scale down the image to fit the container */
+        max-width: 300px; /* Optional: Set a max-width for the image */
+        height: auto; /* Adjust height automatically to maintain aspect ratio */
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 20%; /* Make the image a circle */
+    }
+
+    .profile-image {
+        width: 100%; /* Make the image fill the container */
+        height: auto; /* Adjust height automatically to maintain aspect ratio */
+    }
+
+    .text-container {
+        padding: 20px; /* Keep padding */
+        width: 100%; /* Optional: Adjust width to fit container */
+    }
+}
+
+.text-container h1 {
+    margin-top: 0; /* Remove top margin from the first element */
+    color: #000000; /* This is a placeholder for your actual text color */
+    font-size: 60px;
+}
+
+.text-container p {
+    color: #424242; /* This is a placeholder for your actual text color */
+    font-size: 20px; /* Replace with your desired size */
+}
